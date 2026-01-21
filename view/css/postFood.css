@@ -1,0 +1,291 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:sans-serif;
+    
+}
+
+body{
+    background-color: rgb(248, 247, 242);
+}
+
+.sidebar{
+
+    background-color:white;
+    height: 100vh;
+    z-index: 1;
+    width: 240px;
+    position: fixed;
+ 
+   
+
+
+}
+
+.logo{
+    height:60px ;
+    width: 200px;
+    display: flex;
+    position: relative;
+    top: 20px;
+    
+    
+
+
+}
+#logoImg{
+    height: 40px;
+    width: 38px;
+    margin-left: 15px;
+    background-color: rgb(21, 153, 21);
+    border-radius: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+
+}
+#logoTag{
+    height: 50px;
+    width: 70px;
+    margin: 10px 0px 0px 20px;
+   
+  
+} 
+
+
+a{
+    text-decoration: none;
+    color: grey;
+    
+   
+}
+
+#navbar1{
+ 
+   padding: 20px 0px 10px 30px;
+   color: grey;
+}
+
+#navbar2{
+    padding: 20px 0px 10px 30px;
+    color: grey;
+   background-color: rgb(219, 246, 217);
+  
+}
+
+#navbar3{
+   padding: 20px 0px 10px 30px;
+   color: grey;
+  
+}
+
+#navbar4{
+   padding: 20px 0px 10px 30px;
+   color: grey;
+}
+
+#userProfile {
+    position: absolute;
+    display: flex;         
+    align-items: center;  
+    padding: 15px 15px; 
+    margin-top: 310px; 
+    margin-left: 20px; 
+    font-size: 18px;
+    color: grey;    
+}
+
+#userProfile i {
+            
+    margin-right: 10px;    
+         
+}
+
+
+
+#signOut{
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    color: grey;
+}
+
+
+.main{
+    position:absolute;
+    top: 25px;
+    left:270px;
+    
+ 
+}
+
+#p1{
+    color: grey;
+
+}
+
+
+
+#formp1{
+    background-color: white;
+    border-radius: 20px;
+    height: 540px;
+    width: 650px;
+    position: relative;
+    top: 20px;
+    font-family:'Times New Roman';
+    padding: 20px 0px 0px 20px;
+
+    
+}
+
+#titleForm1{
+        color: green;
+    }
+
+
+#formp1 input[type="number"] ,#formp1 select{
+    height: 35px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: rgb(248, 247, 242);
+    border: 1px solid rgb(213, 171, 103);
+    margin-left: 27px;
+    
+}
+#quantity{
+    height: 35px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: rgb(248, 247, 242);
+    border: 1px solid rgb(213, 171, 103);
+    margin-left: 27px;
+}
+
+#foodName{
+
+    height: 35px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: rgb(248, 247, 242);
+    border: 1px solid rgb(213, 171, 103);
+    margin-left: 5px;
+
+}
+#descrip{
+    height: 100px;
+    width: 450px;
+    resize: none;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: rgb(248, 247, 242);
+    border: 1px solid rgb(213, 171, 103);
+}
+
+#foodImg{
+  height: 22px;
+  width: 490px;
+  border-radius: 5px;
+  background-color: rgb(248, 247, 242);
+  border: 1px solid rgb(213, 171, 103);
+}
+
+
+
+#foodNameTime{
+    height: 20px;
+    width: 450px;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: rgb(248, 247, 242);
+    border: 1px solid rgb(213, 171, 103);
+}
+
+#formp2{
+    background-color:white;
+    border-radius: 20px;
+    height: 140px;
+    width: 650px;
+    font-family:'Times New Roman';
+    padding: 20px 0px 0px 20px;
+    margin-top: 40px;
+    
+    
+
+}
+#flogo2{
+    color: green;
+}
+
+#p2{
+    font-size: 12px;
+}
+
+#formp3{
+    background-color:white;
+    border-radius: 20px;
+    height: 175px;
+    width: 650px;
+    font-family:'Times New Roman';
+    padding: 20px 0px 0px 20px;
+    margin-top: 30px;
+    
+    
+
+}
+
+#address{
+
+    height: 35px;
+    width: 320px;
+    border-radius: 10px;
+    background-color: rgb(248, 247, 242);
+    border: 1px solid rgb(213, 171, 103);
+    margin-left: 5px;
+
+}
+
+#flogo3{
+    color: green;
+}
+
+
+/* #instructions{
+    height: 35px;
+    width: 400px;
+    border-radius: 10px;
+    background-color: rgb(248, 247, 242);
+    border: 1px solid rgb(213, 171, 103);
+    margin-left: 5px;
+
+} */
+
+#postFoodbtn{
+    height: 40px;
+    width: 450px;
+    background-color: green;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid white;
+
+}
+
+#cancel{
+    height: 35px;
+    color: black;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid grey;
+
+}
+
