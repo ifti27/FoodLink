@@ -1,0 +1,301 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:sans-serif;
+    
+}
+
+body{
+    background-color: rgb(248, 247, 242);
+}
+
+.sidebar{
+
+    background-color:white;
+    height: 700px;
+    width: 240px;
+    position: fixed;
+ 
+   }
+
+.logo{
+    height:60px ;
+    width: 200px;
+    display: flex;
+    position: relative;
+    top: 20px;
+    
+}
+.logo{
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-left:20px;
+}
+#logoTag{
+    height: 50px;
+    width: 70px;
+    margin: 10px 0px 0px 20px;
+    padding-top: 15px;
+    } 
+
+
+a{
+    text-decoration: none;
+    color: grey;
+    
+   
+}
+
+#navbar1{
+ 
+   padding: 20px 0px 10px 30px;
+   color: grey;
+}
+
+#navbar2{
+    padding: 20px 0px 10px 30px;
+    color: grey;
+  
+}
+
+#navbar3{
+   padding: 20px 0px 10px 30px;
+   color: grey;
+}
+
+#navbar4{
+   padding: 20px 0px 10px 30px;
+   color: grey;
+}
+
+#navbar1:active{
+    background-color: rgb(214, 252, 214);
+    color: rgb(39, 118, 32);
+    
+}
+
+#navbar2:active{
+    background-color: rgb(214, 252, 214);
+    color: rgb(39, 118, 32);
+    
+}
+
+#navbar3:active{
+    background-color: rgb(214, 252, 214);
+    color: rgb(39, 118, 32);
+    
+}
+
+#navbar4:active{
+    background-color: rgb(214, 252, 214);
+    color: rgb(39, 118, 32);
+    
+}
+
+#signOut{
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    color: grey;
+}
+
+#mainPart{
+   position: absolute;
+    top: 25px;
+    left:300px;
+}
+
+
+.history{
+    margin-top: 15px;
+    display: flex;
+    height: 120px;
+    width: 1218px;
+ 
+    justify-content: space-between;
+   
+
+}
+
+.hisDiv{
+    margin-top: 5px;
+    padding-top:15px ;
+    padding-left: 20px;
+    background-color: white;
+    height: 80px;
+    width: 280px;
+    color: grey;
+    
+    border-radius: 12px;
+    font-size: 15px;
+   
+
+}
+
+#actPost1{
+  
+    padding:20px ;
+    background-color: white;
+    height: 60px;
+    width: 1215px;
+    border-radius: 15px;
+    display: flex;
+
+}
+#actPostTag{
+    margin-left: 10px;
+    margin-top: 10px;
+ 
+}
+
+#img1{
+    
+    height: 60px;
+    width: 60px;
+    background-image: url("biriyani.jpg");
+    background-size: cover;
+    border-radius: 10px;
+}
+
+
+
+#claim1{
+    height: 15px;
+    margin-top: 22px;
+    margin-left: 700px;
+    font-size: 12px;
+    background-color: rgb(245, 240, 218);
+    color: green;
+    padding-top: 6px;
+    padding: 4px;
+    border-radius: 8px;
+
+}
+
+#view1{
+    margin-left: 20px;
+    margin-top: 20px;
+    color: rgb(93, 91, 91);
+    height: 30px;
+    padding: 7px;
+    border-radius: 9px;
+    border: 1px solid white;
+    
+}
+#claim2{
+    height: 15px;
+    margin-top: 22px;
+    margin-left: 660px;
+    font-size: 12px;
+    background-color: rgb(245, 240, 218);
+    color: green;
+    padding-top: 6px;
+    padding: 4px;
+    border-radius: 8px;
+   
+
+}
+#view2{
+    margin-left: 20px;
+    margin-top: 20px;
+    color: rgb(93, 91, 91);
+    height: 30px;
+    padding: 7px;
+    border-radius: 9px;
+    border: 1px solid white;
+    
+}
+
+
+
+#claim3{
+    height: 15px;
+    margin-top: 22px;
+    margin-left: 733px;
+    font-size: 12px;
+    background-color: rgb(245, 240, 218);
+    color: green;
+    padding-top: 6px;
+    padding: 4px;
+    border-radius: 8px;
+
+}
+#view3{
+    margin-left: 20px;
+    margin-top: 20px;
+    color: rgb(93, 91, 91);
+    height: 30px;
+    padding: 7px;
+    border-radius: 9px;
+    border: 1px solid white;
+    
+}
+span{
+    font-size: smaller;
+    
+}
+#portions{
+    color: grey;
+}
+ #time{
+    margin-left: 4px;
+    color: grey;
+ }
+
+ #actPost2{
+    margin-top: 10px;
+    padding:20px ;
+    background-color: white;
+    height: 60px;
+    width: 1215px;
+    border-radius: 15px;
+    display: flex;
+    
+
+}
+#img2{
+
+    height: 60px;
+    width: 60px;
+    background-image: url("mix.jpg");
+    background-size: cover;
+    border-radius: 10px;
+
+}
+
+#expired{
+    height: 13px;
+    margin-top: 22px;
+    margin-left: 710px;
+    font-size: 12px;
+    background-color: red;
+    color: white;
+    padding:5px 10px 5px 10px;
+    border-radius: 10px;
+
+}
+
+#actPost3{
+    margin-top: 10px;
+    padding:20px ;
+    background-color: white;
+    height: 60px;
+    width: 1215px;
+    border-radius: 15px;
+    display: flex;
+    
+
+}
+#img3{
+
+    height: 60px;
+    width: 60px;
+    background-image: url("pasta.jpg");
+    background-size: cover;
+    border-radius: 10px;
+}
+#p2
+{
+    margin: auto 10px 20px 0px;
+}

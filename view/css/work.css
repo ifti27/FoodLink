@@ -1,0 +1,106 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #faf7f2;
+    color: #222;
+}
+
+
+.howitworks {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.subtitle {
+    color: #666;
+    max-width: 600px;
+    margin: 10px auto 40px;
+}
+
+
+.role {
+    margin-bottom: 60px;
+}
+
+.roledesc {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+.card {
+    background: white;
+    width: 260px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+
+.card.small {
+    text-align: center;
+}
+
+
+.step {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.green {
+    background-color: #3a9b5f;
+}
+
+.orange {
+    background-color: #f28c28;
+}
+
+
+.btn {
+    margin-top: 25px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+
+}
+
+.greenbtn {
+    background-color: #3a9b5f;
+    color: white;
+}
+.greenbtn:hover {
+    background-color: #33854e;
+    color: white;
+}
+
+.orangebtn {
+    background-color: #f28c28;
+    color: white;
+}
+.orangebtn:hover {
+    background-color: #d1761f;
+    color: white;
+}
+
+.why {
+    
+    padding: 50px 20px;
+    text-align: center;
+}
