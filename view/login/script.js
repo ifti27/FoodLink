@@ -12,3 +12,28 @@ function toggleVisibility(inputId, iconId) {
         icon.classList.add("fa-eye");
     }
 }
+function checkEmail() {
+    let email = document.getElementById('emailfld').value;
+    let statusSpan = document.getElementById('emailStatus');
+    if (email.length === 0) {
+        statusSpan.innerHTML = "";
+        return;
+    }
+    let formData = new FormData();
+    formData.append('email', email);
+    fetch('../../controller/checkemailControl.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.text())
+    .then(data => {
+        if (data.trim() === "taken") {
+            statusSpan.style.color = "red";
+            statusSpan.innerHTML = "User already exists!";
+        } else {
+            statusSpan.style.color = "green";
+            statusSpan.innerHTML = "Email is free to use";
+        }
+    })
+    .catch(error => console.error('Error:', error));
+}

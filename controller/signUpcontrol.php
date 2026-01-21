@@ -39,7 +39,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
             }
         else
             {
-                if(!filter_var($email))
+                if(!filter_var($email, FILTER_VALIDATE_EMAIL))
                     {
                         $hasErr=true;
                         $_SESSION['emailErr']="enter a valid email";

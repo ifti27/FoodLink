@@ -42,8 +42,9 @@ session_start();
                 <span name="nameErr" style="color:red"><?php if(isset($_SESSION["nameErr"])) {echo $_SESSION["nameErr"];unset($_SESSION['nameErr']);} ?></span><br>
                 <label for="email" style="margin-bottom: 15px;">Email</label><br>
                 <input type="text" id="emailfld" name="email" placeholder="e.g. xyz@gmail.com" style="margin-top: 10px;"><br>
+                <span id="emailStatus" style="font-size: 12px; font-weight: bold;"></span><br>
                 <span name="emailErr" style="color:red"><?php if(isset($_SESSION["emailErr"])) {echo $_SESSION["emailErr"];unset($_SESSION['emailErr']);} ?></span><br>
-                <label for="addr" style="margin-top: 15px;">Adress</label><br>
+                <label for="addr" style="margin-top: 15px;">Address</label><br>
                 <input type="text" id="addrfld" name="addr" style="margin-top: 10px;"><br>
                 <span name="addrErr" style="color:red"><?php if(isset($_SESSION["addrErr"])) {echo $_SESSION["addrErr"];unset($_SESSION['addrErr']);} ?></span><br>
                 <label for="phone" style="margin-top: 15px;">Phone</label><br>

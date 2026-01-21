@@ -60,13 +60,12 @@ a{
  
    padding: 20px 0px 10px 30px;
    color: grey;
-   background-color: rgb(196, 244, 191);
 }
 
 #navbar2{
     padding: 20px 0px 10px 30px;
     color: grey;
-  
+    background-color: rgb(196, 244, 191);
 }
 
 #navbar3{
@@ -78,22 +77,12 @@ a{
    padding: 20px 0px 10px 30px;
    color: grey;
 }
-#navbar6{
-   padding: 20px 0px 10px 30px;
-   color: grey;
-}
 
 #navbar1:hover{
     background-color: rgb(214, 252, 214);
     color: rgb(39, 118, 32);
     
 }
-#logout{
-    padding:5px;
-    background:transparent;
-    border:0px;
-}
-
 
 #navbar2:hover{
     background-color: rgb(214, 252, 214);
@@ -106,6 +95,12 @@ a{
     color: rgb(39, 118, 32);
     
 }
+#logout{
+    padding:5px;
+    background:transparent;
+    border:0px;
+}
+
 
 #navbar4:hover{
     background-color: rgb(214, 252, 214);

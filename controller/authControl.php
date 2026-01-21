@@ -63,6 +63,7 @@ session_start();
                             {
                                 $_SESSION['name']=$user['name'];
                                 $_SESSION['role']=$user['role'];
+                                $_SESSION['email']=$user['email'];
                                 header("Location:../view/admin/dashboard.php");
                                 exit();
                             }
@@ -70,6 +71,7 @@ session_start();
                             {
                                 $_SESSION['name']=$user['name'];
                                 $_SESSION['role']=$user['role'];
+                                $_SESSION['email']=$user['email'];
                                 header("Location:../view/donor/dashboard.php");
                                 exit();
                             }
@@ -77,6 +79,7 @@ session_start();
                             {
                                 $_SESSION['name']=$user['name'];
                                 $_SESSION['role']=$user['role'];
+                                $_SESSION['email']=$user['email'];
                                 header("Location:../view/reciever/dashboard.php");
                                 exit();
                             }

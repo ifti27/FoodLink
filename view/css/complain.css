@@ -60,16 +60,19 @@ a{
  
    padding: 20px 0px 10px 30px;
    color: grey;
-   background-color: rgb(196, 244, 191);
 }
 
 #navbar2{
     padding: 20px 0px 10px 30px;
     color: grey;
-  
 }
 
 #navbar3{
+   padding: 20px 0px 10px 30px;
+   color: grey;
+    background-color: rgb(196, 244, 191);
+}
+#navbar6{
    padding: 20px 0px 10px 30px;
    color: grey;
 }
@@ -77,13 +80,16 @@ a{
 #navbar4{
    padding: 20px 0px 10px 30px;
    color: grey;
-}
-#navbar6{
-   padding: 20px 0px 10px 30px;
-   color: grey;
+
 }
 
 #navbar1:hover{
+    background-color: rgb(214, 252, 214);
+    color: rgb(39, 118, 32);
+    
+}
+
+#navbar2:hover{
     background-color: rgb(214, 252, 214);
     color: rgb(39, 118, 32);
     
@@ -95,12 +101,6 @@ a{
 }
 
 
-#navbar2:hover{
-    background-color: rgb(214, 252, 214);
-    color: rgb(39, 118, 32);
-    
-}
-
 #navbar3:hover{
     background-color: rgb(214, 252, 214);
     color: rgb(39, 118, 32);
@@ -108,6 +108,11 @@ a{
 }
 
 #navbar4:hover{
+    background-color: rgb(214, 252, 214);
+    color: rgb(39, 118, 32);
+    
+}
+#navbar6:hover{
     background-color: rgb(214, 252, 214);
     color: rgb(39, 118, 32);
     
@@ -136,6 +141,7 @@ table {
   border-collapse: collapse;
   min-width: 900px; 
   width: 100%;
+  padding:10px;
 }
 thead tr {
   border-top: 1px solid #ddd7d7;
@@ -143,7 +149,7 @@ thead tr {
 }
 thead td {
   font-weight: 700;
-  padding:8px 16px;
+  padding:15px 16px;
 }
 td {
   padding: 14px 16px;

@@ -2,6 +2,12 @@
 session_start();
 require_once("../../model/usermodel.php");
 $donors= showuser();
+$recievers=showreciever();
+$complains=showcomplains();
+$donornum=donornum();
+$recievernum=recievernum();
+$complainnum=complainnum();
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,7 +28,7 @@ $donors= showuser();
             <div id="logoImg">
                 <i class="fa-regular fa-heart"></i>
             </div>
-            <a href="home.php" id="logoTag">FoodLink</a>
+            <a href="../../home.php" id="logoTag">FoodLink</a>
         </div>
         <br>
         <hr style="hieght: 0.5px;">
@@ -35,13 +41,13 @@ $donors= showuser();
             <i class="fa-solid fa-users"></i>
             <a href="donorList.php">Donor List</a>
           </div>
-          <div id="navbar4">
+          <div id="navbar6">
             <i class="fa-solid fa-users"></i>
             <a href="donorList.php">Reciever List</a>
           </div>
           <div id="navbar3">
             <i class="fa-solid fa-file-lines"></i>
-            <a href="complaints.php">Complaints</a>
+            <a href="complaints.php">Complains</a>
           </div>
           <div id="navbar4">
             <i class="fa-solid fa-gear"></i>
@@ -54,8 +60,10 @@ $donors= showuser();
         </div>
 
          <div id="signOut">
-            <i class="fa-solid fa-arrow-right-from-bracket"></i>
-            <a href="signIn.php">Sign Out</a>
+            <form action="../../controller/logout.php" method="POST">
+                 <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                <button type="submit" id="logout">Sign Out</button>
+            </form>
           </div>
        
     </section>
@@ -64,46 +72,134 @@ $donors= showuser();
       <div class="dashboard">
         <div class="dashDiv" id="dashDiv1">
             <h1 style="font-size:20px">Total Donars</h1>
-            <span name="donornumber"></span>
+            <span name="donornumber" style="font-size: 25px;"><?php echo $donornum ?></span>
         </div>
         <div class="dashDiv" id="dashDiv2">
             <h1 style="font-size:20px">Total Reciever</h1>
-            <span name="recievernumber"></span>
+            <span name="recievernumber" style="font-size: 25px;"><?php echo $recievernum ?></span>
         </div>
         <div class="dashDiv" id="dashDiv3">
             <h1 style="font-size:20px">Complaints</h1>
-            <span name="complaintnumber"></span>
+            <span name="complaintnumber" style="font-size: 25px;"><?php echo $complainnum ?></span>
         </div>
       </div>
-
     
     <h2>Donors</h2>
-
-    <table >
+    <table id="usertable" >
       <tr>
         <th>Email</th>
         <th>Name</th>
         <th>Phone</th>
         <th>Address</th>
         <th>Code</th>
+        <th>Action</th>
       </tr>
       <?php 
-      if(!empty($donors))
-        {
-          foreach($donors as $user) {
-                  echo "<tr>";
-                  echo "<td>" . htmlspecialchars($user['email']) . "</td>";
-                  echo "<td>" . htmlspecialchars($user['name']) . "</td>";
-                  echo "<td>" . htmlspecialchars($user['phone']) . "</td>";
-                  echo "<td>" . htmlspecialchars($user['address']) . "</td>";
-                  echo "<td>" . htmlspecialchars($user['code']) . "</td>";
-                  echo "</tr>";
-              }
-          } else {
-              echo "<tr><td colspan='5' style='text-align:center;'>No donors found</td></tr>";
-        }  
-      ?>
+    if(!empty($donors)) {
+        foreach($donors as $user) {
+    ?>
+        <tr>
+            <td><?php echo $user["email"]; ?></td>
+            <td><?php echo $user["name"]; ?></td>
+            <td><?php echo $user["phone"]; ?></td>
+            <td><?php echo $user["address"]; ?></td>
+            <td><?php echo $user["code"]; ?></td>
+            <td>
+                <form action='../../controller/deleteuserControl.php' method='POST'>
+                    <input type='hidden' name='email' value='<?php echo $user["email"]; ?>'>
+                    <button type="submit" name="submit" id="delbtn">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </button>
+                </form>
+            </td>
+        </tr>
+    <?php
+        }
+    } else {
+        echo "<tr><td colspan='6' style='text-align:center;'>No donors found</td></tr>";
+    }
+    ?>
     </table>
-    </section>
+    <span style="color:red;"><?php if(isset($_SESSION['msg'])){echo $_SESSION['msg'];unset($_SESSION['msg']);} ?></span>
+    <div id="view">
+      <a href="donorlist.php" id="viewbtn">View All</a>
+    </div>
+    <h2 style="margin-top:30px;">Recivers</h2>
+    <table id="usertable" >
+      <tr>
+        <th>Email</th>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Address</th>
+        <th>Code</th>
+        <th>Action</th>
+      </tr>
+      <?php 
+    if(!empty($recievers)) {
+        foreach($recievers as $users) {
+    ?>
+        <tr>
+            <td><?php echo $users["email"]; ?></td>
+            <td><?php echo $users["name"]; ?></td>
+            <td><?php echo $users["phone"]; ?></td>
+            <td><?php echo $users["address"]; ?></td>
+            <td><?php echo $users["code"]; ?></td>
+            <td>
+                <form action='../../controller/deleterecieverControl.php' method='POST'>
+                    <input type='hidden' name='email' value='<?php echo $users["email"]; ?>'>
+                    <button type="submit" name="submit" id="delbtn">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </button>
+                </form>
+            </td>
+        </tr>
+    <?php
+        }
+    } else {
+        echo "<tr><td colspan='6' style='text-align:center;'>No recievers found</td></tr>";
+    }
+    ?>
+    </table>
+    <span style="color:red;"><?php if(isset($_SESSION['msg'])){echo $_SESSION['msg'];unset($_SESSION['msg']);} ?></span>
+    <div id="view">
+      <a href="recieverlist.php" id="viewbtn">View All</a>
+    </div>
+    <h2 style="margin-top:30px;">Complains</h2>
+    <table id="usertable" >
+      <tr>
+        <th>Email</th>
+        <th>Name</th>
+        <th>Complain</th>
+        <th>Action</th>
+      </tr>
+      <?php 
+    if(!empty($complains)) {
+        foreach($complains as $complain) {
+    ?>
+        <tr>
+            <td><?php echo $complain["email"]; ?></td>
+            <td><?php echo $complain["name"]; ?></td>
+            <td><?php echo $complain["complaint"]; ?></td>
+            <td>
+                <form action='../../controller/deletecomplainControl.php' method='POST'>
+                    <input type='hidden' name='email' value='<?php echo $complain["email"]; ?>'>
+                    <button type="submit" name="submit" id="delbtn">
+                        <i class="fa-solid fa-trash-can"></i>
+                    </button>
+                </form>
+            </td>
+        </tr>
+    <?php
+        }
+    } else {
+        echo "<tr><td colspan='4' style='text-align:center;'>No complaints found</td></tr>";
+    }
+    ?>
+    </table>
+    <span style="color:red;"><?php if(isset($_SESSION['msg'])){echo $_SESSION['msg'];unset($_SESSION['msg']);} ?></span> 
+    <div id="view">
+      <a href="complains.php" id="viewbtn">View All</a>
+    </div>
+  </section>
 </body>
 </html>
