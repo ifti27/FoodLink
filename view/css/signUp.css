@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+    background: linear-gradient(to right, rgb(41, 102, 69), rgb(71, 184, 122));
+    min-height: 100vh; 
+    position: relative;
+}
+#title{
+    display: flex;
+    align-items: center;
+    color: black;
+}
+#side{
+    display: inline-block;
+    justify-content: center; 
+    align-items: center;
+    width: 100%;
+}
+#sidetitle{
+    color: white;
+    text-align: center;
+    width: 700px;
+    margin: 300px 100px 0px 100px;
+}
+#logo{
+    height: 40px;
+    width: 40px;
+}
+#usertype{
+    margin:10px 0px 10px 0px;
+    padding:10px;
+    width:300px;
+    font-size: 15px;
+    background-color: white;
+    border-radius: 10px;
+}
+#heading{
+    top: 20px;
+    left: 20px; 
+    display: flex; 
+    align-items: center;
+    z-index: 100;
+}
+#title{
+    text-decoration: none;
+}
+#signUp{
+    width: 420px;
+    background-color: white;
+    height: auto;
+    display: inline-block;
+    padding: 50px;
+    position: absolute;
+    top:60px;
+    right:40px;
+    margin-bottom: 100px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 1);
+}
+#signbtn{
+    margin-top: 10px;
+    width: 310px;
+    height:50px;
+    background-color: rgb(57, 142, 95);
+    border: rgb(57, 142, 95);
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    transition: 0.3s;
+}
+#signbtn:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#signIn{
+    text-decoration: none;
+    color: rgb(57, 142, 95);
+}
+#namefld{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+}
+#emailfld{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+}
+#phonefld{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+}
+#addrfld{
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+}
+#passfld{
+    width: 310px;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    
+}
+#conpassfld{
+    width: 310px;
+    height: 40px;
+    border-radius: 10px;
+}
+.pass-wrapper {
+    position: relative;
+    width: 300px;
+    display: inline-block;
+}
+.pass-wrapper input {
+    width: 100%;
+    padding-right: 40px;
+    box-sizing: border-box; 
+}
+.pass-wrapper i {
+    position: absolute;
+    right: 10px;
+    top: 60%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #888;
+}
+
+.pass-wrapper i:hover {
+    color: rgb(57, 142, 95);
+}
