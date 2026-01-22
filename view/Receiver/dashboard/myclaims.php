@@ -65,6 +65,7 @@ $claimedfood = getMyClaims($name);
             </tr>
             <?php
             require_once("../../../controller/confirmController.php");
+            require_once("../../../model/FoodModel.php");
             $claimedfood = getMyClaims($name);
             foreach($claimedfood as $Food)
             { 

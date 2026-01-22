@@ -149,27 +149,22 @@ else {
         echo "Form submitted successfully!";
     }
     else{
-
-         $dir="../view/resource/";
-            if(!is_dir($dir)){
-
-                mkdir($dir);
-            }
-
-
-            $imgpath=$dir.basename($_FILES['file']['name']);
-
-            if(move_uploaded_file($_FILES['file']['tmp_name'],$imgpath))
-            {
-                echo "File uploaded successfully: ".$imgpath."<br>";
-            }
-            else
-            {
-                $fileErr="File upload failed";
-            }
-
+        $filename = basename($_FILES['file']['name']); 
+        $dir = "../view/resource/";
+        if(!is_dir($dir)){
+            mkdir($dir);
+        }
+        $target_path = $dir . $filename; 
+        if(move_uploaded_file($_FILES['file']['tmp_name'], $target_path))
+        {
+            echo "File uploaded successfully: " . $filename . "<br>";
             $status = "Active"; 
-            $result = insertFood($name,$fname, $quantity, $location, $time, $status,$imgpath);
+            $result = insertFood($name, $fname, $quantity, $location, $time, $status, $filename);
+        }
+        else
+        {
+            $fileErr = "File upload failed";
+        }
         
             if($result) {
             header("Location: ../view/donor/dashboard.php");

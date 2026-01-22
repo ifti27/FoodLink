@@ -14,7 +14,7 @@
         <header>
             <nav class="nav">
                 <ul id="left">
-                    <li><a id="title" href="home.html"><img id="logo" src="view/images/food-donation.png" alt="logo"><h3 style="display:inline;margin:5px;font-size:16px;">Food Link</h3></a></li>
+                    <li><a id="title" href="home.php"><img id="logo" src="view/images/food-donation.png" alt="logo"><h3 style="display:inline;margin:5px;font-size:16px;">Food Link</h3></a></li>
                 </ul>
                 <ul id="right">
                     <li><a id="signIn" href="view/login/signIn.php">Sign In</a></li>
@@ -22,8 +22,8 @@
                 </ul>
                 <ul id="center">
                     <li><a id="home" href="view/landing/home.php">Home</a></li>
-                    <li><a id="food" href="view/landing/food.php">Browse Food</a></li>
-                    <li><a id="work" href="view/landing/work.php">How it Works</a></li>
+                    <li><a id="food" href="view/Receiver/available food/available_food.php">Browse Food</a></li>
+                    <li><a id="work" href="view/Receiver/how_it_works/work.php">How it Works</a></li>
                 </ul>
             </nav>
         </header>

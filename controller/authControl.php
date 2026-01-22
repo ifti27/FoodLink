@@ -80,7 +80,7 @@ session_start();
                                 $_SESSION['name']=$user['name'];
                                 $_SESSION['role']=$user['role'];
                                 $_SESSION['email']=$user['email'];
-                                header("Location:../view/reciever/dashboard.php");
+                                header("Location:../view/Receiver/dashboard/browse.php");
                                 exit();
                             }
                         

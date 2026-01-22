@@ -13,7 +13,7 @@ function insertUser($email, $name, $phone, $address,$password,$role, $code)
             $query = "INSERT INTO donor (email, name, phone, address,password,role,code)
               VALUES ('$email', '$name', '$phone', '$address','$password','$role','$code')";
         }
-    else{
+    elseif($role==3){
         $query = "INSERT INTO reciever (email, name, phone, address,password,role,code)
               VALUES ('$email', '$name', '$phone', '$address','$password','$role','$code')";
     }

@@ -41,7 +41,7 @@
                 </div>
             </div>
 
-            <a href="SignUp.php"><button class="btn greenbtn">Start Donating -></button></a>
+            <a href="../../login/signUp.php"><button class="btn greenbtn">Start Donating -></button></a>
         </div>
 
         

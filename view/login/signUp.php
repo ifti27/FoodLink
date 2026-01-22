@@ -41,7 +41,7 @@ session_start();
                 <input type="text" style="margin-top: 15px;margin-bottom: 5px;" id="namefld" name="name" placeholder="e.g. John"><br>
                 <span name="nameErr" style="color:red"><?php if(isset($_SESSION["nameErr"])) {echo $_SESSION["nameErr"];unset($_SESSION['nameErr']);} ?></span><br>
                 <label for="email" style="margin-bottom: 15px;">Email</label><br>
-                <input type="text" id="emailfld" name="email" placeholder="e.g. xyz@gmail.com" style="margin-top: 10px;"><br>
+                <input type="text" id="emailfld" name="email" placeholder="e.g. xyz@gmail.com" onkeyup="checkEmail()" style="margin-top: 10px;"><br>
                 <span id="emailStatus" style="font-size: 12px; font-weight: bold;"></span><br>
                 <span name="emailErr" style="color:red"><?php if(isset($_SESSION["emailErr"])) {echo $_SESSION["emailErr"];unset($_SESSION['emailErr']);} ?></span><br>
                 <label for="addr" style="margin-top: 15px;">Address</label><br>

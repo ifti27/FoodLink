@@ -20,10 +20,10 @@ function searchFood($key)
     return $result;
 }
 
-function insertClaim($name, $fname, $quantity, $date, $status)
+function insertClaim($name, $fname, $quantity, $date)
 {
     $conn = dbconnect();
-    $sql = "INSERT INTO claimedfood (name, fname, quantity, date, status) VALUES ('$name', '$fname', '$quantity', '$date', '$status')";
+    $sql = "INSERT INTO claimedfood (name, fname, quantity, date) VALUES ('$name', '$fname', '$quantity', '$date')";
     return mysqli_query($conn, $sql);
 }
 function confirmPickup($id)
@@ -35,9 +35,21 @@ function confirmPickup($id)
 function getMyClaims($name)
 {
     $conn = dbConnect();
-    $sql = "SELECT * FROM claimedfood WHERE status='Claimed'";
+    $sql = "SELECT * FROM claimedfood WHERE name='$name'";
     $result = mysqli_query($conn, $sql);
-    return $result;
+    if (!$result) {
+        die("SQL Error: " . mysqli_error($conn));
+    }
+
+    $user = [];
+    if(mysqli_num_rows($result) > 0)
+    {
+        while($row = mysqli_fetch_assoc($result))
+        {
+            $user[] = $row;
+        }
+    }
+    return $user;
 }
 function cancelClaim($id)
 {
@@ -45,10 +57,10 @@ function cancelClaim($id)
     $sql = "DELETE FROM claimedfood WHERE id='$id'";
     return mysqli_query($conn, $sql);
 }
-function saveClaim($name, $fname, $qty, $date, $status) {
+function saveClaim($name, $fname, $qty, $date) {
     $conn = dbConnect();
-    $sql = "INSERT INTO claimed_food (name, fname, quantity, date, status) 
-            VALUES ('$name', '$fname', '$qty', '$date', '$status')";
+    $sql = "INSERT INTO claimedfood (name, fname, quantity, date) 
+            VALUES ('$name', '$fname', '$qty', '$date')";
     
     return mysqli_query($conn, $sql);
 }

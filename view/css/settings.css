@@ -12,7 +12,6 @@ body{
 .sidebar{
 
     background-color:white;
-<<<<<<< HEAD
     height: 100vh;
     z-index: 1;
     width: 240px;
@@ -20,19 +19,6 @@ body{
 
 }
 
-=======
-    height: 700px;
-    width: 240px;
-    position: fixed;
- 
-}
-.logo{
-    display: flex;
-    align-items: center;
-    padding-top: 20px;
-    padding-left:20px;
-}
->>>>>>> b9a899cc3aa7dc24ec0b494d266856c282abf6d0
 .logo{
     height:60px ;
     width: 200px;
@@ -40,7 +26,6 @@ body{
     position: relative;
     top: 20px;
     
-<<<<<<< HEAD
     
 
 
@@ -58,37 +43,19 @@ body{
 
 
 }
-=======
-}
-
-
->>>>>>> b9a899cc3aa7dc24ec0b494d266856c282abf6d0
 #logoTag{
     height: 50px;
     width: 70px;
     margin: 10px 0px 0px 20px;
-<<<<<<< HEAD
     font-size: 20px;
     color:black;
     font-weight: bold;
-=======
-    padding-top: 15px;
-    
-   
-  
->>>>>>> b9a899cc3aa7dc24ec0b494d266856c282abf6d0
 } 
 
 
 a{
     text-decoration: none;
-<<<<<<< HEAD
     color: grey; 
-=======
-    color: grey;
-    
-   
->>>>>>> b9a899cc3aa7dc24ec0b494d266856c282abf6d0
 }
 
 #navbar1{
@@ -107,18 +74,14 @@ a{
    padding: 20px 0px 10px 30px;
    color: grey;
 }
-<<<<<<< HEAD
 #navbar6{
    padding: 20px 0px 10px 30px;
    color: grey;
 }
-=======
->>>>>>> b9a899cc3aa7dc24ec0b494d266856c282abf6d0
 
 #navbar4{
    padding: 20px 0px 10px 30px;
    color: grey;
-<<<<<<< HEAD
    background-color: rgb(177, 242, 171);
 }
 #navbar5{
@@ -143,36 +106,6 @@ a{
     font-size: 14px;
     color: grey;
 }
-
-
-=======
-}
-
-#navbar1:active{
-    background-color: rgb(214, 252, 214);
-    color: rgb(39, 118, 32);
-    
-}
-
-#navbar2:active{
-    background-color: rgb(214, 252, 214);
-    color: rgb(39, 118, 32);
-    
-}
-
-#navbar3:active{
-    background-color: rgb(214, 252, 214);
-    color: rgb(39, 118, 32);
-    
-}
-
-#navbar4:active{
-    background-color: rgb(214, 252, 214);
-    color: rgb(39, 118, 32);
-    
-}
->>>>>>> b9a899cc3aa7dc24ec0b494d266856c282abf6d0
-
 #signOut{
     position: absolute;
     bottom: 20px;
@@ -189,11 +122,7 @@ a{
 #formp1{
     background-color: white;
     border-radius: 20px;
-<<<<<<< HEAD
     height: 450px;
-=======
-    height: 480px;
->>>>>>> b9a899cc3aa7dc24ec0b494d266856c282abf6d0
     width: 650px;
     position: relative;
     top: 20px;
@@ -208,23 +137,12 @@ a{
 
     color: green;
 }
-<<<<<<< HEAD
 #orgName{
     background-color: rgb(248, 247, 242);
     height: 30px;
     width: 350px;
     padding: 5px;
     margin-top:10px;
-=======
-
-
-#orgName{
-    background-color: rgb(248, 247, 242);
-    height: 30px;
-    width: 370px;
-    padding: 5px;
-    margin-left: 10px;
->>>>>>> b9a899cc3aa7dc24ec0b494d266856c282abf6d0
     border: 1px solid rgb(234, 211, 175);
     border-radius: 10px;
 
@@ -232,40 +150,25 @@ a{
 #email{
     background-color: rgb(248, 247, 242);
     height: 30px;
-<<<<<<< HEAD
     width: 350px;
     padding: 5px;
     margin-top:10px;
-=======
-    width: 450px;
-    padding: 5px;
-    margin-left: 30px;
->>>>>>> b9a899cc3aa7dc24ec0b494d266856c282abf6d0
     border: 1px solid rgb(234, 211, 175);
     border-radius: 10px;
 
 }
-<<<<<<< HEAD
 #logout{
     padding:5px;
     background:transparent;
     border:0px;
 }
-=======
->>>>>>> b9a899cc3aa7dc24ec0b494d266856c282abf6d0
 
 #phnNo{
     background-color: rgb(248, 247, 242);
     height: 30px;
-<<<<<<< HEAD
     width: 350px;
     padding: 5px;
     margin-top:10px;
-=======
-    width: 403px;
-    padding: 5px;
-    margin-left: 15px;
->>>>>>> b9a899cc3aa7dc24ec0b494d266856c282abf6d0
     border: 1px solid rgb(234, 211, 175);
     border-radius: 10px;
 
@@ -277,11 +180,7 @@ a{
     height: 30px;
     width: 353px;
     padding: 5px;
-<<<<<<< HEAD
     margin-top:10px;
-=======
-    margin-left: 5px;
->>>>>>> b9a899cc3aa7dc24ec0b494d266856c282abf6d0
     border: 1px solid rgb(234, 211, 175);
     border-radius: 10px;
 
@@ -296,10 +195,7 @@ a{
     
     height: 70px;
     width: 450px;
-<<<<<<< HEAD
     resize: none;
-=======
->>>>>>> b9a899cc3aa7dc24ec0b494d266856c282abf6d0
     padding: 10px;
     margin-top: 5px;
     border-radius: 10px;
@@ -485,7 +381,6 @@ input:checked + .slider:before {
     font-style: italic;
     margin-left:120px;
 }
-<<<<<<< HEAD
 
 .ErrSpan1{
     color: red;
@@ -494,11 +389,3 @@ input:checked + .slider:before {
     margin-left:15px;
 
 }
-=======
-.text{
-    margin-left: 20px;
-}
-.class-container{
-    margin-top: 20px;
-}
->>>>>>> b9a899cc3aa7dc24ec0b494d266856c282abf6d0

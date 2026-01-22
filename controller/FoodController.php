@@ -12,7 +12,7 @@ class FoodController {
                     
                     echo '<div class="card">
                             <div class="image-box">
-                                <img src="' . $row['food_image'] . '" alt="' . $row['fname'] . '">
+                                <img src="/project/view/resource/' . $row['imgpath'] . '" alt="' . $row['fname'] . '">
                                 <span class="tag">Available</span>
                                 <span class="time">' . $row['time'] . '</span>
                             </div>
