@@ -49,7 +49,7 @@ session_start();
 
         <div id="userProfile">
             <i class="fa-solid fa-circle-user"></i> 
-            <span class="user-name"><?php echo ($_SESSION['name'] ?? 'Guest'); ?></span>
+            <span class="user-name" style="color:black;font-style:normal;"><?php echo ($_SESSION['name'] ?? 'Guest'); ?></span>
         </div>
        
          <div id="signOut">
