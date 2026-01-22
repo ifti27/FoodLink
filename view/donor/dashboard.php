@@ -57,7 +57,7 @@ $name = $_SESSION['name'];
          <div id="signOut">
            
             <i class="fa-solid fa-arrow-right-from-bracket"></i>
-            <a href="signIn.php">Sign Out</a>
+            <a href="../login/signIn.php">Sign Out</a>
           </div>
        
     </section>
